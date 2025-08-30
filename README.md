@@ -23,10 +23,10 @@ This is a simple Kotlin console application for fetching and displaying weather 
    ```bash
    git clone https://github.com/YaZlodeyko/WeatherAPI-Challenge.git
    cd WeatherAPI-Challenge
-
-2. Build the project
+2. Copy 'config.properties.example' -> 'config.properties', enter the 'API_KEY=..'
+3. Build the project
   ./gradlew build
 
-3. Run the application
+4. Run the application
   ./gradlew run
 
