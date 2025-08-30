@@ -4,7 +4,7 @@ import org.example.api.RetrofitClient
 import kotlin.system.exitProcess
 
 fun main() {
-    val apiKey = "a5ae9f0ee7b34930bbb141329252708"
+    val apiKey = Config.apiKey()
     val cities = listOf("Chisinau", "Madrid", "Kyiv", "Amsterdam")
 
     val forecasts = cities.associate { city ->
