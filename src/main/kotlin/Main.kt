@@ -28,7 +28,7 @@ fun main() {
             ?.getOrNull(1)?.hour?.find {it.time.endsWith("12:00")}
         val windDir = noonForecast?.wind_dir ?:"N/A"
         val info = if (day != null) {
-            "Min : %.1f\u00B0C, Max: %.1f\u00B0C, Hum: %.0f%%, Wind %.1fkph Direction: %s".format(
+            "Min : %.1f°C, Max: %.1f°C, Hum: %.0f%%, Wind %.1f kph Direction: %s".format(
                 day.minTemp, day.maxTemp, day.humidity, day.windSpeed, windDir
             )
         } else {

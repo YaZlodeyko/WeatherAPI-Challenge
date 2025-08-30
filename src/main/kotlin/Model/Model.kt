@@ -1,4 +1,4 @@
-package org.example.Model
+package org.example.model
 
 
 import com.google.gson.annotations.SerializedName
@@ -11,7 +11,7 @@ data class Location (
     val country: String,
     val localtime: String
 )
-data class ForecastResponce (
+data class ForecastResponse (
     val location: Location,
     val forecast: Forecast
 )
