@@ -10,9 +10,6 @@ import java.util.concurrent.TimeUnit
 object RetrofitClient {
     private const val BASE_URL = "https://api.weatherapi.com/"
     private fun createOkHttpClient(): OkHttpClient {
-        val logging = HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.BASIC
-        }
         return OkHttpClient.Builder()
             .addInterceptor(MaskingInterceptor())
             .connectTimeout(10, TimeUnit.SECONDS)
